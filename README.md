@@ -18,10 +18,12 @@ You could assign a value that type is inferred
 ageofUniverse := 14e9
 
 ## multiple declares
+```
 var (
   ageofUniverse int
-  lang = go
+  lang = "go"
 )
+```
 
 ## declare and asign
 var ageofuniverse uint64
