@@ -34,3 +34,20 @@ ageofuniverse = 1382000000
 ## swaps (like python)
 foo, bar := 1,2
 foo, bar = bar, foo
+
+
+## Structs
+Go is not exactly object oriented, but structs allow us to define types with fields and methods belonging to them.
+
+```
+type Article struct {
+    Id      string `json:"id"`
+    Title string `json:"title"`
+    Desc string `json:"desc"`
+    Content string `json:"content"`
+}
+
+func (a Article) FormatArticle() {  
+    fmt.Printf("[%s] %s - %s\n", a.Id, a.Title, a.Desc)
+}
+```
